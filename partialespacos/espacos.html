@@ -1,0 +1,105 @@
+<header class="action-bar">
+	<a href="#menumodulos" class="app-img action">
+      <!--<i class="icon-fries"></i>-->
+    <img src="img/cmoeiras.jpg">
+    </a>
+    <h1 class="title"> &nbsp Voltar</h1>
+</header>
+
+<div class="content" ng-controller="mercadosCtrl">
+	<div class="row">
+	<div class="small-11 small-centered columns">
+		<fieldset>
+		<legend>Selecione o Mercado</legend>
+			<div class="row">
+				<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			    <div id="cenas" class="swiper-slide" ng-repeat="list in mercados">
+					<fieldset>
+						<ul class="pricing-table">
+				  		<li class="title" id="titulo"> {{list.me_nome}} </li>
+				  		<li class="lotacao" id="lotacao"> {{list.me_lotacao}} </li>
+				  		<li class="description" id="morada"><h5> {{list.me_morada}} </h5></li>
+				  		<li class="description" id="horario"><h6>Horário: <li> {{list.me_horario}} <li> {{list.me_horariofds}} </li></li></h6></li>
+			  			<li class="cta-button"><a class="medium button round" href="#dashespacos" data-reveal-id="frmEmissaoFat">Entrar</a></li>
+						</ul>
+					</fieldset>
+				</div>
+     			</div>
+			    <div class="pagination"></div>
+				</div>
+			</div>
+			<!--<div class="small-12 large-4 columns">
+					<a href="#dashespacos">
+						<fieldset name="fieldDashEspaços_Esquerdo">
+							<div class="radius panel">	
+	  						<h3 align="center">Mercado de Oeiras</h3>
+						</div>
+						</fieldset>
+					</a>
+				</div>
+				<div class="small-12 large-4 columns">
+					<a href="#dashespacos">
+						<fieldset name="fieldDashEspaços_Centro">
+							<div class="radius panel">	
+  							<h3 align="center">Mercado de Paço de Arcos</h3>
+							</div>
+						</fieldset>
+					</a>
+				</div>
+				<div class="small-12 large-4 columns">
+					<a href="#dashespacos">
+					<fieldset name="fieldDashEspaços_Direito">
+						<div class="radius panel">	
+		  				<h3 align="center">Mercado de Carnaxide</h3>
+						</div>
+					</fieldset>
+					</a>	
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 large-4 columns">
+					<a href="#dashespacos">
+					<fieldset name="fieldDashEspaços_Esquerdo">
+						<div class="radius panel">	
+	  					<h3 align="center">Mercado de Queijas</h3>
+						</div>
+					</fieldset>
+					</a>
+				</div>
+				<div class="small-12 large-4 columns">
+					<a href="#dashespacos">
+					<fieldset name="fieldDashEspaços_Esquerdo">
+						<div class="radius panel">	
+	  					<h3 align="center">Mercado de &nbspAlgés</h3>
+						</div>
+					</fieldset>
+					</a>
+				</div>
+				<div class="small-12 large-4 columns">
+					<a href="#dashespacos">
+					<fieldset name="fieldDashEspaços_Esquerdo">
+						<div class="radius panel">	
+	  					<h3 align="center">Mercado de Tercena</h3>
+						</div>
+					</fieldset>
+					</a>
+				</div>
+			-->
+		</fieldset>
+	</div>
+	</div>
+	</div>
+
+<script src="lib/swipe/js/idangerous.swiper-2.0.min.js"></script>
+<script src="lib/swipe/js/idangerous.swiper.scrollbar-2.0.js"></script>
+
+<script>
+  var mySwiper = new Swiper('.swiper-container',{
+    pagination: '.pagination',
+    slidesPerView: 2,
+    freeMode: true,
+    freeModeFluid: true
+  })
+</script>
+

@@ -1,0 +1,38 @@
+<header class="action-bar">
+	<a href="#" class="app-img action">
+      <!--<i class="icon-fries"></i>-->
+      <img src="img/cmoeiras.jpg">
+    </a>
+    <h1 class="title"> &nbsp Bem Vindo</h1>
+		<ul class="actions pull-right">
+      		<li><a href="#" class="action" title="Settings"><i class="icon-settings"></i></a></li>
+    	</ul>
+</header>
+
+<div class="content">
+  		<!-- Sistema de Grid -->
+		<!-- numa grid de 12, ocupamos 11, mas centradas-->
+		<div class="row" align="center">
+			<img src="img/cmo.jpg"/>
+		</div>
+			<div class="row">
+			<div class="small-11 small-centered columns">
+				<!-- Login Form -->
+				<div id="LoginForm" ng-controller = "authCtrl">
+					<form>
+						<fieldset>
+							<legend>Faça o seu login </legend>
+							<label for="txtUtilizador">Utilizador</label>
+							<input type="text" id="txtutilizador" placeholder="Insira o seu utilizador" required>
+							<label for="txtPalavraChave">Palavra-Chave</label>
+							<input type="password" id="txtpalavrachave" placeholder="Insira a sua password" required>
+						</fieldset>
+						<a class="button medium round small-12" ng-click="auth()">Login</a>
+					</form>
+				</div>
+
+			</div>
+			<!--  -->
+			</div>
+</div>
+

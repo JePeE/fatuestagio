@@ -1,0 +1,71 @@
+<header class="action-bar">
+	<a href="#dashpolicia" class="app-icon action">
+    	<i class="icon-fries"></i>
+    </a>
+    <h1 class="title">Voltar</h1>
+</header>	
+
+
+	<!--Formulário de Emissão de Ticket/Multa-->
+<div class="content">
+<div id="formMulta" class="row">
+	<div class="small-11 small-centered columns">
+		<form>
+			<fieldset>
+				<h3>Insira os dados</h3>
+				<div class="small-12 columns">
+					<div class="row collapse">
+						<div class="small-3 columns">
+							<span class="label" id="lblDate"></span><span class="label" id="lblTime"></span>
+						</div>
+						<div class="small-3 small-offset-2 columns">
+							<a href="#" data-dropdown="dropTp_Multa" class="medium button dropdown round">Tipo:</a><br>
+							<ul id="dropTp_Multa" class="f-dropdown">
+  								<li><a href="#">Estrada</a></li>
+  								<li><a href="#">Estabelecimentos</a></li>
+  								<li><a href="#">Obras</a></li>
+							</ul>
+						</div>
+						<div class="small-3 columns">			
+							<ul class="button-group round">
+								<li><a href="#" id="btnTicket" class="medium button">Multa</a></li>
+  								<li><a href="#" id="btnFactura" class="medium button">Fatura</a></li>
+  							</ul>
+  						</div>	
+					</div>
+				</div>
+					<div class="row">
+						<div class="small-12 columns">
+							<div class="row">
+								<div class="small-4 columns">
+									<label id="lblMatric">Insira a Matrícula:</label>
+									<input type="text" id="inpMatric" maxlenght="10" required>
+								</div>
+								<div class="small-4 columns">
+									<label id="lblMatric">Insira a localização:</label>
+									<input type="text" id="inpLocal" maxlenght="25" required>
+								</div>
+								<div class="small-4 columns">
+									<label id="lblNotas">Notas</label>
+									<input type="text" id="inpNotas">
+								<!-- Botão de GPS, deve obter as coordenadas de GPS e colocar a respectiva localização na Label "inpLocal"
+								<button id="btnObtGPS" type="submit">Obter GPS</button>-->
+								</div>
+								<div class="small-4  columns">
+								</div>
+							</div>
+						</div>
+					</div>
+							<div class="row">
+								<div class="small-12 columns">
+									<ul class="button-group round even-3">
+  										<li><a href="#DashPolicia" class="medium button">Cancelar</a></li>
+  										<li><a href="#" class="medium button">Obter GPS</a></li>
+ 										<li><a href="#formPolicia" class="medium button">Criar</a></li>
+									</ul>
+								</div>	
+							</div>
+		</form>					
+	</div>
+</div>
+</div>

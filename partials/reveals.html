@@ -1,0 +1,32 @@
+<div id="frmEmissaoFat" class="reveal-modal medium">
+	<a class="close-reveal-modal">&#215;</a>
+	<div class="small-11 small-centered columns">
+		<div class="row">
+			<div class="small-12 small-centered columns">
+				<div id="EmissaoFact">
+					<form>
+						<fieldset>
+							<legend>Insira os dados</legend>
+							<label for="txtNIFin">NIF</label>
+							<input type="text" id="txtNIFin">
+							<label for="txtNomeFact">Nome</label>
+							<input type="text" id="txtNomeFact">
+						</fieldset>
+						<div class="row">
+							<div class="small-12 small-centered columns">
+								<label style="text-align:left"><b>Total S/IVA:</b></label>
+								<label style="text-align:left"><b>Total C/IVA:</b></label>
+							</div>
+						</div>		
+						<div class="row">	
+							<ul class="button-group round even-2">
+								<li><a class="medium button" id="btnFatSimples"href="#">Fat. Simplificada</a></li>
+  								<li><a class="medium button" id="btnFat" onClick="printpage()">Fatura</a></li>
+  							</ul>
+  						</div>
+  					</form>		
+  				</div>				
+			</div>
+		</div>
+	</div>
+</div>
